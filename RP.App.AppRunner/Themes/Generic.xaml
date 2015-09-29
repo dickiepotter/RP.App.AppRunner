@@ -1,0 +1,16 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Controls="clr-namespace:RPUtil.Controls">
+    <Style TargetType="{x:Type Controls:CaptionControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Controls:CaptionControl}">
+                    <DockPanel>
+                        <Label DockPanel.Dock="{TemplateBinding CaptionDock}" Content="{TemplateBinding Caption}" Target="{Binding ElementName=ContentPresenter, Path=Content}" HorizontalAlignment="{TemplateBinding CaptionAlignment}"/>
+                        <ContentPresenter x:Name="ContentPresenter"/>
+                    </DockPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,3 @@
+[submodule "RP.Util.Icon"]
+	path = RP.Util.Icon
+	url = https://github.com/dickiepotter/RP.Util.Icon.git
